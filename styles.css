@@ -1,0 +1,410 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+}
+.header{
+  width:100%;
+  padding:0 20px;
+  background-color: #556B2F;
+  color: white;
+}
+.container{
+display:flex;
+align-items:center;
+position: relative;
+max-width: 1200px;
+height:55px;
+margin:0 auto;
+}
+
+.logo-button {
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    padding: 0;
+}
+.logo{
+  position:absolute;
+  width: 45px;
+  left:0;
+  margin-bottom:55px;
+}
+.menu-item{
+width: Hug (66px)px;
+height: Hug (28px)px;
+gap: 10px;
+opacity: 0px;
+}
+a {
+    text-decoration: none;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.nav-links ul li {
+    margin: 0 10px; 
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white; 
+}
+
+.nav-links {
+   /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align:center;
+    color: white;
+  width: Hug (393px)px;
+height: Hug (28px)px;
+gap: 25px;
+opacity: 0px;*/
+margin:0 auto;
+}
+
+
+.nav-links a {
+    color: white;
+    padding: 10px;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+    color:lightblue;
+}
+.main-img{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:30px;
+  height:30px;
+}
+
+.menu-icon {
+    display: none; 
+    font-size: 30px; 
+    cursor: pointer; 
+    position: absolute;/* It is clickable but noting happens like Figma example*/
+    right: 0;
+}
+/* About us Section */
+.about-us {
+    padding: 50px 20px; 
+    background-color: #FFFFE0; 
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    flex-wrap: wrap; 
+}
+
+.about-us-image {
+    flex: 1; 
+    padding-right: 20px;
+}
+
+.about-us-image img {
+    width: 100%; 
+    height: auto; 
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+     
+}
+
+.about-us-text {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding-left: 20px; 
+}
+
+.about-us-text h2 {
+    margin-bottom: 15px; 
+    font-size: 28px; 
+    color: black; 
+}
+
+.about-us-text p {
+    font-size: 17px; 
+    line-height: 1.6; 
+    color: #2F4F4F; 
+    
+}
+
+/* Upcoming Event Section */
+.upcoming-event {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.upcoming-event h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #333;
+   font-family:sans;
+}
+
+.event-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch ;
+    gap: 10px;
+    margin-bottom: 40px;
+  background-color:#BDB76B;
+  padding:10px;
+  border-radius: 8px;
+}
+.event-agenda-description {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+   background-color:#BDB76B;
+  padding:10px;
+   border-radius: 8px;
+}
+
+.event-image, .event-agenda, .event-description {
+    flex: 1;
+}
+
+.event-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.event-info, .event-description {
+    padding: 20px;
+    background-color: #FFFFE0;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.event-info h3, .event-description h3, .event-agenda h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.event-info p, .event-description p {
+    font-size: 16px;
+    color: #666;
+  font-family: Arial, sans-serif;
+}
+
+.event-agenda ul {
+    font-size: 16px;
+    color: black;
+    list-style-type: disc;
+    padding-left: 20px;
+  list-style: none;
+}
+
+.event-agenda li {
+    margin-bottom: 10px;
+}
+
+/* All events Section */
+.all-events {
+    padding: 50px 20px; 
+    background-color: #F0FFF0;
+}
+
+.all-events h2 {
+    text-align: center; 
+    margin-bottom: 50px; 
+    font-size: 37px; 
+    color: #006400; 
+  font-family:sans;
+}
+
+.events-container {
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.event-box {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.event-box img {
+    width: 100%; 
+    height: auto; 
+}
+
+.events-content {
+    padding: 20px; 
+}
+
+.events-description {
+    font-size: 16px; 
+    color: #666; 
+    margin-bottom: 10px; 
+}
+
+.event-date {
+    font-size: 18px; 
+    color: #006400;
+}
+
+/* Footer */
+.footer-pic{
+  width:30px;
+  height:30px;
+  margin-left: 5px;
+  vertical-align: middle; 
+}
+.footer {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px; 
+    background-color: #556B2F;
+    color: white; 
+    flex-wrap: wrap; 
+}
+
+.footer-section {
+    flex: 1; 
+    padding: 0 25px; 
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px; 
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px; 
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline; 
+   color: black;
+}
+
+.footer-section p {
+    margin: 10px 0; 
+}
+
+/* Map section specific styling */
+.footer-section.map iframe {
+    border: 0;
+    width: 100%;
+    height: 200px; 
+}
+
+/*Media adjustments*/
+@media (max-width: 768px) {
+  body{
+    padding:10px;
+  }
+  /*Navigation bar*/
+  .nav-links ul{
+    display:none ;
+  }
+  .menu-icon {
+        display: block;
+    }
+  /*About us*/
+   .about-us-container {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .about-us-image, .about-us-text {
+        padding: 0;
+    }
+
+    .about-us-text h2 {
+        font-size: 36px; 
+    }
+
+    .about-us-text p {
+        font-size: 16px;
+    }
+  /*Up coming*/
+  .upcoming-event h2{
+    font-size: 36px;
+  }
+  .upcoming-event h3{
+    font-size: 20px;
+  }
+  .upcoming-event p{
+    font-size: 16px;
+  }
+  .event-details, .event-agenda-description {
+        flex-direction: column; 
+    }
+
+    .event-image, .event-info, .event-agenda, .event-description {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+     
+  /*All events*/
+   .events-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .event-box {
+        width: 100%; 
+        max-width: none;
+        margin-bottom: 20px; 
+    }
+  .all-events h2{
+    font-size: 36px;
+  }
+  .events-content p{
+    font-size: 16px;
+  }
+  /*footer*/
+  .footer {
+        flex-direction: column; 
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+}
